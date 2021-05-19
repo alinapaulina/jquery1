@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("document").ready(function() {
+
+            $("#show").on("click", function() {
+                $("#textBox").show();
+
+            });
+
+            $("#hide").on("click", function() {
+                $("#textBox").hide();
+
+            });
+
+
+        }); 
+    </script>
+    <style>
+        #textBox{
+           display: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="show">Click to show</a> | <a href="#" id="hide">Click to hide</a>
+    <div id="textBox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nesciunt quae similique accusamus itaque voluptate in qui enim
+             facere consectetur. Reprehenderit ea exercitationem, sed ullam 
+             neque nam esse cumque nihil laudantium id quos doloremque est 
+             magnam, incidunt, eveniet sunt corrupti. Ipsum error illo molestias 
+             dolorem consequuntur nemo reiciendis. Qui, quis!</p>
+    </div>
+</body>
+</html>

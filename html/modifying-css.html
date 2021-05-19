@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#add-class").click(function(){
+                $("p:first").addClass('color');
+            });
+            $("#remove-class").click(function(){
+                $("p:first").removeClass('color');
+            });
+            $("#toggle-class").click(function(){
+                $("p:first").toggleClass('color');
+            });
+            $("#increase-class").click(function(){
+                $("p:first").css("font-size", "+=1px");
+            });
+        });
+    </script>
+    
+    <style>
+        .color{
+            color: #00D8FF;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#" id="add-class">add class</a>
+
+    <a href="#" id="remove-class">remove class</a>
+
+    <a href="#" id="toggle-class">toggle class</a>
+
+    <a href="#" id="increase-class">increase class</a>
+
+
+    <div id="container">
+        <p> 1 Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
+
+        <p> 2 Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
+
+        <p> 3 Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
+        </div>      
+</body>
+</html>   

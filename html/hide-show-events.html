@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("document").ready(function(){
+
+            $(".textCopy").hover(highlightCopy);
+            function highlightCopy(){
+                $(this).toggleClass("highlight");
+            }
+        });
+    </script>
+    
+    <style>
+            .highlight{
+                background: red;
+            
+        }
+    </style>
+</head>
+<body>
+   <div id="textBox">
+       <p class="textCopy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+       Perferendis, ut sunt iusto nobis necessitatibus, quis eius at</p> 
+            <p>dicta alias ex, unde eos. Voluptatum fugiat dolorem unde 
+       incidunt pariatur, expedita nostrum commodi voluptates? Voluptates 
+       velit eligendi natus esse, assumenda sit.</p>
+   </div>
+</body>
+</html>

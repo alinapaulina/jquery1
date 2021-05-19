@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("document").ready(function(){
+        //   $("#container p:first").wrap("<div class='colorBox'>");
+            // $("<div>container</div>").replaceAll("#container");
+            $("#container").replaceWith("<div>this has been replaced with</div>");
+        });
+    </script>
+    
+    <style>
+        .colorBox{
+            color: #00D8FF;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="container">
+        <p> 1 Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
+
+        <p> 2 Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
+
+        <p> 3 Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
+        </div>      
+</body>
+</html>  

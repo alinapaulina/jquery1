@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("document").ready(function(){
+          $("#append").click(function(){
+              $("p:first").append("I just appended some compy!");
+          });
+          $("#prepend").click(function(){
+              $("p:first").prepend("I just prepended some compy!");
+          })
+        });
+    </script>
+    
+    <style>
+           
+    </style>
+</head>
+<body>
+
+    <a href="#" id="append">append</a>
+    <a href="#" id="prepend">prep end</a>
+
+
+    <div id="container">
+        <p> 1 Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
+
+        <p> 2 Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
+
+        <p> 3 Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
+        </div>      
+</body>
+</html> 
